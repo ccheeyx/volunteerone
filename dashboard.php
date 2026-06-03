@@ -826,9 +826,16 @@ foreach($programs as $p) {
                 if(query && !title.includes(query) && !loc.includes(query) && !org.includes(query)) isMatch = false;
                 if(activeCat !== 'all' && cat !== activeCat) isMatch = false;
                 
-                // Perbaikan Filter Tersedia
-                // Menyembunyikan program yang sudah diaply
-                if(activeTab === 'tersedia' && applied) isMatch = false;
+                // --- PERBAIKAN: Cara Aman Membaca Teks Kartu ---
+                // Ambil seluruh tulisan yang ada di dalam kartu ini
+                let teksKartu = card.textContent || card.innerText || ""; 
+                
+                // Cek apakah di dalam kartu ada tulisan "KUOTA PENUH"
+                let isKuotaPenuh = teksKartu.includes('KUOTA PENUH');
+                // -----------------------------------------------
+
+                // Menyembunyikan program yang sudah diaply ATAU kuotanya penuh
+                if(activeTab === 'tersedia' && (applied || isKuotaPenuh)) isMatch = false;
 
                 if(isMatch) {
                     card.style.display = 'block';
