@@ -2,6 +2,9 @@
 require 'koneksi.php';
 
 // ... (kode redirect session tetap sama) ...
+$stat_relawan = $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'user'")->fetchColumn();
+$stat_program = $pdo->query("SELECT COUNT(*) FROM programs")->fetchColumn();
+$stat_org = $pdo->query("SELECT COUNT(*) FROM users WHERE role = 'organizer'")->fetchColumn();
 
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -124,15 +127,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <!-- Mini Stats (Grid Bootstrap dalam Grid Tailwind) -->
                 <div class="row mt-8 pt-8 border-t border-gray-200">
                     <div class="col-4">
-                        <h4 class="font-black text-3xl text-gray-900">10K+</h4>
+                        <h4 class="font-black text-3xl text-gray-900"><?= $stat_relawan ?></h4>
                         <p class="text-xs text-gray-500 font-bold uppercase mt-1">Relawan Aktif</p>
                     </div>
                     <div class="col-4">
-                        <h4 class="font-black text-3xl text-gray-900">5K+</h4>
+                        <h4 class="font-black text-3xl text-gray-900"><?= $stat_program ?></h4>
                         <p class="text-xs text-gray-500 font-bold uppercase mt-1">Aksi Sosial</p>
                     </div>
                     <div class="col-4">
-                        <h4 class="font-black text-3xl text-gray-900">2.7K</h4>
+                        <h4 class="font-black text-3xl text-gray-900"><?= $stat_org ?></h4>
                         <p class="text-xs text-gray-500 font-bold uppercase mt-1">Organisasi</p>
                     </div>
                 </div>
