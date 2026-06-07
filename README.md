@@ -1,6 +1,6 @@
 # 🤝 VolunteerOne - Ambil Peranmu, Ubah Niat Baik Jadi Aksi Baik
 
-**VolunteerOne** adalah platform Sistem Informasi Terpadu yang dirancang untuk mempertemukan para relawan individu dengan berbagai organisasi atau komunitas sosial. Platform ini bertujuan untuk memudahkan manajemen pendaftaran relawan, pencarian isu sosial yang relevan, serta pelacakan kontribusi relawan secara real-time.
+**VolunteerOne** merupakan platform Sistem Informasi Terpadu yang dikembangkan untuk menjembatani kebutuhan antara relawan individu dan organisasi sosial. Melalui platform ini, relawan dapat menemukan berbagai kegiatan sosial yang sesuai dengan minat dan lokasi mereka, sementara organisasi dapat mengelola proses rekrutmen relawan secara lebih efektif. Selain itu, sistem juga menyediakan fitur pemantauan kontribusi relawan sehingga setiap aktivitas yang diikuti dapat tercatat dan dievaluasi dengan lebih mudah.
 
 Proyek ini dikembangkan sebagai bagian dari pemenuhan tugas akademik program studi **Sistem Informasi, Universitas Tadulako**.
 
@@ -16,10 +16,10 @@ Proyek ini dikembangkan sebagai bagian dari pemenuhan tugas akademik program stu
 * **Sistem Pengurutan (Sorting) Fleksibel:** Mengurutkan kegiatan berdasarkan *Aktivitas Terbaru, Pelaksanaan Terdekat,* dan *Pelaksanaan Terjauh*.
 * **Formulir Aplikasi & Unggah CV:** Proses pendaftaran terintegrasi yang memungkinkan relawan mengirimkan motivasi serta berkas CV (PDF/DOC) langsung ke penyelenggara.
 * **Modal Detail Clean UI:** Tampilan informasi mendalam mengenai aktivitas dengan tata letak modern, dilengkapi *banner* gambar yang responsif dan informasi kuota interaktif.
-* **Pembaruan Profil:** Pengaturan identitas mandiri termasuk nomor WhatsApp, domisili, dan bio/pengalaman singkat relawan.
+* **Pembaruan Profil:** Relawan dapat mengelola informasi profil secara mandiri, termasuk nomor WhatsApp, domisili, serta deskripsi singkat mengenai pengalaman atau minat dalam kegiatan sosial. Informasi ini membantu organisasi mengenal calon relawan dengan lebih baik.
 
 ### 🏢 Hub Organisasi / Mitra (Organizer Dashboard)
 * **Manajemen Program:** Membuat, memperbarui, dan menghapus info kegiatan sosial secara mandiri.
-* **Validasi Pelamar:** Menyetujui (*Approve*) atau menolak (*Reject*) aplikasi pendaftaran relawan yang masuk secara real-time.
+* **Validasi Pelamar:** Organisasi dapat meninjau setiap pendaftaran yang masuk, melihat informasi pelamar, kemudian memberikan keputusan berupa persetujuan (Approve) atau penolakan (Reject) secara langsung melalui dashboard sistem.
 
 ---
